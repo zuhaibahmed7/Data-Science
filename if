@@ -1,0 +1,47 @@
+
+                                                    #Task-1
+            # 1----> Write a program that asks user to enter a city name and it should tell which country the city belongs to
+            #2-----> Write a program that asks user to enter two cities and it tells you if they both are in same country or not.
+            #For example if I enter mumbai and chennai, it will print "Both cities are in India" but if I enter mumbai
+            # and dhaka it should print "They don't belong to same country"
+
+india = ["mumbai", "banglore", "chennai", "delhi"]
+pakistan = ["lahore","karachi","islamabad"]
+bangladesh = ["dhaka", "khulna", "rangpur"]
+
+
+
+city = input("Enter the city name:")
+if india.__contains__(city):
+    print("This city belongs to the India:")
+if pakistan.__contains__(city):
+    print("This city belongs to the pakistan:")
+if bangladesh.__contains__(city):
+    print("This city belongs to the bangladesh:")
+
+
+city1 = input("Enter the city1 name:")
+city2 = input("Enter the city2 name:")
+
+if india.__contains__(city1) and india.__contains__(city2):
+    print("Both cities belong to same Country India:")
+if pakistan.__contains__(city1) and pakistan.__contains__(city2):
+    print("Both cities belong to same Country pakistan :")
+if bangladesh.__contains__(city1) and bangladesh.__contains__(city2):
+    print("Both cities belong to same Country bangladesh :")
+
+
+
+                                                    #Task-2
+    #Write a python program that can tell you if your sugar is normal or not. Normal fasting level sugar range is 80 to 100.
+#Ask user to enter his fasting sugar level
+#If it is below 80 to 100 range then print that sugar is low
+#If it is above 100 then print that it is high otherwise print that it is normal
+
+fasting_sugar = int(input("Enter your fasting sugar level:"))
+if fasting_sugar < 80:
+    print("sugar is low")
+elif fasting_sugar > 100:
+    print("it is high")
+else:
+    print(" It is normal")
