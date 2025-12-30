@@ -1,0 +1,26 @@
+class Animal:
+    def __init__(self, habitat):
+        self.habitat = habitat
+
+
+    def show_habitat(self):
+        print(f"Animal lives on {self.habitat}")
+
+
+    def habitat(self):
+        pass
+
+
+class Dog(Animal):
+    def __init__(self, name, habitat):
+        super().__init__(habitat)           #Calling parent class Constructor
+        self.name = name
+        print("Dog live on land")
+
+    def display_dog(self):
+        print(f"Dog name is {self.name}")
+        self.show_habitat()             #Calling parent class method
+
+
+dog = Dog("puppy", "Land")
+dog.display_dog()
