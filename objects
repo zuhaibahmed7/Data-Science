@@ -1,0 +1,22 @@
+class employee:
+    def __init__(self, id, name):
+        self.id = id
+        self.name = name
+
+empl = employee(23, "ZuhaibAhmed")
+print("Before deleting attribute::::::")
+print(f"id: {empl.id} and name is {empl.name}")
+
+del empl.id                 #Deleting attribute ID ----> Raise AttributeError
+
+try:
+    print(empl.id)
+except AttributeError:
+    print("This attribute has been deleted: ")
+
+print(empl.name)
+
+print(empl)
+
+del empl                    #Deleting entire object will raise NameError
+print(empl)
