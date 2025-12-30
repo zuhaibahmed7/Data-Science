@@ -1,0 +1,10 @@
+
+base = int(input("Enter the base:"))
+height = int(input("Enter the height:"))
+type = input("Enter the type of shape:")
+
+if type == "rectangle":
+    print(base * height)
+else:
+    print((1 / 2) * (base * height))
+
